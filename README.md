@@ -21,6 +21,17 @@ The pane opens when a session starts. Type `/hud` to open it again.
 
 Requires a Claude Code version with mod support (the `plugin-authoring` skill).
 
+Install once, loads in every new session:
+
+```bash
+claude plugin marketplace add tawgroup/session-hud
+claude plugin install session-hud@session-hud
+```
+
+Then start a new Claude Code session. The pane opens by itself, and `/hud` opens it again.
+
+Try it for one session only, without installing:
+
 ```bash
 git clone https://github.com/tawgroup/session-hud.git
 claude --plugin-dir ./session-hud

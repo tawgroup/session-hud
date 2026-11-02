@@ -1,0 +1,14 @@
+{
+  "name": "session-hud",
+  "owner": {
+    "name": "tawgroup"
+  },
+  "plugins": [
+    {
+      "name": "session-hud",
+      "source": "./",
+      "description": "Live HUD pane beside the chat: context, rate limits, cost, git, running tools, subagents, skills, files, timeline"
+    }
+  ],
+  "description": "Session HUD mod for Claude Code"
+}
