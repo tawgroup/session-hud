@@ -1,6 +1,6 @@
 {
   "name": "session-hud",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Session HUD pane: model, context, rate limits, cost, git, skills, tools, files, agents, MCP, timeline",
   "types": "./types/index.d.ts",
   "author": {

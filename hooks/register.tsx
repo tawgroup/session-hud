@@ -111,7 +111,7 @@ async function refreshGit($: Api) {
 
 export const register: Register = on => {
   on('session.start', async ($, e, next) => {
-    await $.command.register({ name: 'hud', description: 'Open the Session HUD pane' })
+    await $.command.register({ name: 'hud', description: 'Toggle the Session HUD pane (open or close)' })
     try {
       const u = await $.session.usage()
       await update($, startedAt, old => old || u.startedAt)
@@ -126,6 +126,11 @@ export const register: Register = on => {
   })
 
   on('command.run', { command: 'hud' }, async $ => {
+    const isUp = (await $.ui.panes()).some(p => p.id === PANE)
+    if (isUp) {
+      await $.ui.close({ id: PANE })
+      return { text: 'Session HUD closed.' }
+    }
     await $.ui.open({ id: PANE, title: TITLE })
     return { text: 'Session HUD opened.' }
   })

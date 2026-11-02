@@ -15,7 +15,7 @@ A Claude Code mod that adds a live HUD pane next to the chat. It shows what the 
 9. **Files edited:** files changed by Edit, Write or NotebookEdit, newest first.
 10. **Timeline:** the last 6 tool calls with result, time, label and duration.
 
-The pane opens when a session starts. Type `/hud` to open it again.
+The pane opens when a session starts. Type `/hud` to close it, and `/hud` again to open it. You can also click the `×` at the top right of the pane.
 
 ## Install
 
@@ -28,7 +28,7 @@ claude plugin marketplace add tawgroup/session-hud
 claude plugin install session-hud@session-hud
 ```
 
-Then start a new Claude Code session. The pane opens by itself, and `/hud` opens it again.
+Then start a new Claude Code session. The pane opens by itself. `/hud` toggles it.
 
 Try it for one session only, without installing:
 
