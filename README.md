@@ -2,6 +2,10 @@
 
 A Claude Code mod that adds a live HUD pane next to the chat. It shows what the session is doing right now, so you do not have to guess.
 
+![Session HUD pane beside a Claude Code session in the desktop app](docs/screenshot.png)
+
+*The HUD pane on the right. The chat on the left is blurred.*
+
 ## What the pane shows
 
 1. **Header:** model, folder, session time, turn number.
@@ -56,4 +60,5 @@ Claude Code generates the type files in `.claude-plugin/types/` on load. They ar
 hooks/hooks.json             module list
 hooks/register.tsx           the mod: event handlers, state, pane UI
 types/index.d.ts             state type contract
+docs/screenshot.png          README screenshot
 ```
