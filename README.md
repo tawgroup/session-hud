@@ -2,6 +2,10 @@
 
 A Claude Code mod that adds a live HUD pane next to the chat. It shows what the session is doing right now, so you do not have to guess.
 
+![Animated demo: a prompt is typed, Claude runs tools, and the HUD pane updates live](docs/demo.gif)
+
+*A simulated session: the prompt and the tool calls are scripted, and the pane on the right shows how the HUD updates as they run.*
+
 ![Session HUD pane beside a Claude Code session in the desktop app](docs/screenshot.png)
 
 *The HUD pane on the right. The chat on the left is blurred.*
@@ -60,5 +64,6 @@ Claude Code generates the type files in `.claude-plugin/types/` on load. They ar
 hooks/hooks.json             module list
 hooks/register.tsx           the mod: event handlers, state, pane UI
 types/index.d.ts             state type contract
+docs/demo.gif                README demo animation
 docs/screenshot.png          README screenshot
 ```
